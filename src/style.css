@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+}
+
+.main-card {
+  width: 465px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-color: rgb(195, 108, 167);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.title {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 35px 20px 0px 20px;
+  border-bottom: 5px solid black;
+}
+
+.content {
+  height: 585px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 0px 20px 0px;
+}
+
+.name,
+.height,
+.weight {
+  height: 60px;
+  width: 345px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.gender {
+  height: 60px;
+  width: 345px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+}
+
+.form {
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn {
+  width: 345px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: black;
+  color: rgb(195, 108, 167);
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
+}
+
+.res {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  height: 170px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+  color: white;
+  padding: 20px;
+}
+
+.res1,
+.res2 {
+  height: 50%;
+  font-size: 18px;
+}
+
+@media (max-width: 433px) {
+  .main-card {
+    height: 100%;
+    border-radius: 0px;
+  }
+  label {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    min-width: 100vw;
+    padding: 20px;
+  }
+  .main-card {
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    min-width: 100vw;
+    padding: 10px;
+  }
+  .main-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-card {
+    min-width: 90%;
+  }
+}

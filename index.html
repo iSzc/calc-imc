@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./public/ms-icon-310x310.png" />
+    <title>Calculadora - IMC</title>
+    <link href="./src/style.css" rel="stylesheet" />
+    <script src="./src/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-card">
+        <div class="title">
+          <p>Calculadora - IMC</p>
+        </div>
+        <div class="content">
+          <div class="name">
+            <div><label for="name"> Nome: </label></div>
+            <input type="text" class="form" id="name" name="name" />
+          </div>
+          <div class="height">
+            <div><label for="height"> Altura: </label></div>
+            <input
+              type="number"
+              class="form"
+              id="height"
+              name="height"
+              placeholder="em metros ex:1.80"
+            />
+          </div>
+          <div class="weight">
+            <div><label for="weight"> Peso: </label></div>
+            <input type="number" class="form" id="weight" name="weight" />
+          </div>
+          <div class="weight">
+            <div><label for="yearsold"> Idade: </label></div>
+            <input type="number" class="form" id="yearsold" name="yearsold" />
+          </div>
+          <div class="gender">
+            <div><p>Gênero:</p></div>
+            <div>
+              <label for="gender"> M </label>
+              <input
+                type="radio"
+                value="M"
+                class="formM"
+                id="gender"
+                name="gender"
+              />
+            </div>
+            <div>
+              <label for="gender">
+                F
+                <input
+                  type="radio"
+                  value="F"
+                  class="formF"
+                  id="gender"
+                  name="gender"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn" id="btn" onclick="calc()">Calcular</button>
+          </div>
+          <div class="res" id="res">
+            <div class="res1" id="res1"></div>
+            <div class="res2" id="res2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
